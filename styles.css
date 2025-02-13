@@ -6,8 +6,13 @@ html{
 body{
     margin:0;
     padding: 0;
-    padding-top: env(safe-area-inset-top);
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@supports(padding-top: env(safe-area-inset-top)) {
+    body {
+        padding-top: env(safe-area-inset-top);
+    }
 }
 /* The following refers to the first gradient section of the website. */
 .home{
