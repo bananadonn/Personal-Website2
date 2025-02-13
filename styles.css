@@ -8,10 +8,36 @@ body{
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
+/* The following refers to the navbar of the website. */
+.navbar{
+    height:5vh;
+    position:fixed;
+    top:0;
+    width:100%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+.nav-link-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    max-width: 40vw;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
 /* The following refers to the first gradient section of the website. */
 .home{
     background: linear-gradient(to right, rgb(222, 208, 197),rgb(174, 185, 212));
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
 .box-for-name{
@@ -45,6 +71,7 @@ body{
 }
 /* The following refers to the About ME section of the website. */
 .about{
+    
     height: 30vh;
 }
 .about-me{
@@ -58,9 +85,11 @@ body{
 .about-me-title{
     font-size: clamp(1rem, 5vw, 3rem);
     font-weight: 700;
-    background: linear-gradient(to bottom,rgb(174, 185, 212), black);
-    background-clip: text;
-    color:transparent;
+    color:black;
     margin:0;
     padding:0;
+}
+
+.fill{
+    height: 100vh;
 }
