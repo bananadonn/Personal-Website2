@@ -1,0 +1,64 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* The following refers to the first gradient section of the website. */
+.home{
+    background: linear-gradient(to right, rgb(222, 208, 197),rgb(174, 185, 212));
+    height: 70vh;
+    width: 100%;
+}
+.box-for-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.my-name-link{
+    text-decoration: none;
+}
+.my-name{
+    font-size: clamp(2rem, 10vw, 6rem);
+    font-weight: 700;
+    color: white;
+    margin:10px;
+    padding:0;
+    transition: font-size 0.5s ease;
+}
+.my-name:hover{
+    font-size: clamp(2rem, 10vw, 7rem);
+}
+.my-title{
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+/* The following refers to the About ME section of the website. */
+.about{
+    height: 30vh;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+}
+.about-me-title{
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 700;
+    background: linear-gradient(to bottom,rgb(174, 185, 212), black);
+    background-clip: text;
+    color:transparent;
+    margin:0;
+    padding:0;
+}
