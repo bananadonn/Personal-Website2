@@ -1,9 +1,12 @@
 html{
+    margin:0;
+    padding: 0;
     scroll-behavior:smooth;
 }
 body{
     margin:0;
     padding: 0;
+    padding-top: env(safe-area-inset-top);
     font-family: 'Josefin Sans', sans-serif;
 }
 /* The following refers to the first gradient section of the website. */
