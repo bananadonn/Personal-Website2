@@ -39,7 +39,7 @@ body{
 /* The following refers to the first gradient section of the website. */
 .home{
     background: linear-gradient(to right, rgb(222, 208, 197),rgb(174, 185, 212));
-    height: 80vh;
+    height: 50vh;
     width: 100%;
 }
 .box-for-name{
@@ -53,10 +53,10 @@ body{
     text-decoration: none;
 }
 .my-name{
-    font-size: clamp(2rem, 10vw, 6rem);
+    font-size: clamp(5rem, 10vw, 6rem);
     font-weight: 700;
     color: white;
-    margin:10px;
+    margin:auto;
     padding:0;
     transition: font-size 0.5s ease;
 }
@@ -81,13 +81,24 @@ body{
     width: 100%;
 
 }
-.about-card{
-    width: 40%;
-    height: 75%;
+.about-card-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    height: 95%;
     margin-left: 45%;
     border-radius: 20px;
+}
+.about-card{
     background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 10px;
     padding: 20px;
+}
+.about-card:hover{
+    background: rgba(255, 255, 255, 0.7);
 }
 .about-title{
     font-size: 2rem;
@@ -101,6 +112,24 @@ body{
     color: black;
     text-align: center;
 }
-.fill{
-    height: 100vh;
+.projects{
+    height: 50vh;
+}
+.projects-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);;
+    height: 100%;
+    border: 1px solid blue;
+}
+.projects-title{
+    margin: auto;
+    padding: 30px;
+    border: 1px solid black;
+    grid-column: 1/4;
+    font-size: 2rem;
+}
+.project-card{
+
+    border:1px solid black;
 }
